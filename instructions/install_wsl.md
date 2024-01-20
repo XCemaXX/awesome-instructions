@@ -8,7 +8,8 @@ Good variant of using non msvc compiler on windows and separate build environmen
 2. Check distros in wsl: ```wsl --list --online``` 
 3. Install distro (by default Ubuntu will be installed): ```wsl --install -d Ubuntu 22.04 LTS```  
 4. Reboot PC  
-5. Run WSL: ```wsl --distribution Ubuntu-22.04``` (check names with ```wsl --lsit```). First run will take time: all files will be unpacked and saved.
+5. Run WSL: ```wsl --distribution Ubuntu-22.04``` (check names with ```wsl --lsit```)  
+   First run will take time: all files will be unpacked and saved.
 
 \* You can check linux filesystem by open windows explorer and go to \\\\wsl$.  
 ** You can move your wsl data to another location: ```wsl --export``` and ```--import```.  
@@ -19,7 +20,8 @@ Good variant of using non msvc compiler on windows and separate build environmen
 1. [Download VS Code and install](https://code.visualstudio.com/download)
 2. [Install extension wsl](https://code.visualstudio.com/docs/remote/wsl)
 3. Connect to linux via wsl extension
-4. Install extensions for WSL: LINUX, not for LOCAL. Possible list of extensions: ```cmake tools, c/c++, git graph, git lens, back & forth```
+4. Install extensions for WSL: LINUX, not for LOCAL  
+   Possible list of extensions: ```cmake tools, c/c++, git graph, git lens, back & forth```
 
 # 3. Setup linux, install packets
 
