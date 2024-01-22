@@ -1,14 +1,14 @@
-Good variant of using non msvc compiler on windows and separate build environment.  
+Good variant of using non MSVC compiler on windows and separating build environment.  
 \* WSL can be installed on Win10+ from build 19401.
 
 
 # 1. [Install WSL](https://learn.microsoft.com/en-en/windows/wsl/install)  
 
 1. Run Powershell as administrator
-2. Check distros in wsl: ```wsl --list --online``` 
-3. Install distro (by default Ubuntu will be installed): ```wsl --install -d Ubuntu 22.04 LTS```  
+2. Check distributions in wsl: ```wsl --list --online``` 
+3. Install distribution (by default Ubuntu will be installed): ```wsl --install -d Ubuntu 22.04 LTS```  
 4. Reboot PC  
-5. Run WSL: ```wsl --distribution Ubuntu-22.04``` (check names with ```wsl --lsit```)  
+5. Run WSL: ```wsl --distribution Ubuntu-22.04``` (check names with ```wsl --list```)  
    First run will take time: all files will be unpacked and saved.
 
 \* You can check linux filesystem by open windows explorer and go to \\\\wsl$.  

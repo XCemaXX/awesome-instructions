@@ -30,7 +30,7 @@ It is possible to use ```Quick create``` in Hyper-V, but I will list steps with 
 6. Install OS (e.g. Ubuntu) as usual
 
 # 3. Turn off autorun GUI after reboot
-If you want to use VM only with VSCode, it is not nessesary to run GUI. So it possible to turn it off.
+If you want to use VM only with VSCode, it is not necessary to run GUI. So it possible to turn it off.
 1. Edit ```/etc/default/grub``` as a root. Change lines to:
 * ```GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"``` -> ```GRUB_CMDLINE_LINUX_DEFAULT="text"```
 * ```GRUB_TERMINAL=console```
@@ -89,7 +89,7 @@ Host Some_name
     User user
     IdentityFile C:\\Users\\USER\\.ssh\\vm_rsa
 ```
-5. Connet to VM by double-click on the created connection
+5. Connect to VM by double-click on the created connection
 6. Enjoy and use your VS Code
 
 # Extra
@@ -98,7 +98,7 @@ Host Some_name
 
 
 ## Turn off automatic checkpoints
-Right-click on the VM/```VM Settings```/```Managment```/```Checkpoints Standart```/```Use Automatic Checkpoints```
+Right-click on the VM/```VM Settings```/```Management```/```Checkpoints Standard```/```Use Automatic Checkpoints```
 
 ## [Install vm tools (turn on clipboard)](https://www.nakivo.com/blog/install-ubuntu-20-04-on-hyper-v-with-enhanced-session/)
 Instruction in the next repo: ```git clone https://github.com/Hinara/linux-vm-tools.git```
@@ -106,7 +106,7 @@ Instruction in the next repo: ```git clone https://github.com/Hinara/linux-vm-to
 ## Setup static local IP for VM
 1. Create an adapter by running next script in PowerShell:
 ```
-New-VMSwitch -SwitchName "switch_for_statitc_ip" -SwitchType Internal
+New-VMSwitch -SwitchName "switch_for_static_ip" -SwitchType Internal
 Get-NetAdapter #(note down ifIndex of the newly created switch as INDEX)
 New-NetIPAddress -IPAddress 192.168.0.1 -PrefixLength 24 -InterfaceIndex <INDEX>
 New-NetNat -Name NATnetworkForStaticIp -InternalIPInterfaceAddressPrefix 192.168.0.0/24
